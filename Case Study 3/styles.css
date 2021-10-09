@@ -1,0 +1,140 @@
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    min-width: 800px;
+}
+
+body {
+    font-family: Verdana, Arial, sans-serif;
+    background-color: #ece1ae;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#wrapper { 
+    background-color: #cca965; 
+    color: #000066;
+    width: 80%;
+    margin-left: auto; 
+    margin-right: auto;
+    min-width:800px;
+}
+
+#leftcolumn { 
+    background-color: #ddd18c;
+    float: left;
+    width: 155px;
+    height: 420px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menutable {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menutable tr:nth-child(odd) {
+    background-color: #cca965;
+}
+
+#menutable td {
+    padding: 15px;
+}
+
+#musictable {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#musictable tr:nth-child(odd) {
+    font-weight: bold;
+    background-color: #ddd18c;
+}
+
+#musictable tr:nth-child(even) td {
+    padding: 10px;
+}
+
+#musictable img {
+    width: 50px;
+    height: 50px;
+}
+
+table img {
+    width: 250px;
+    height: 150px;
+}
+
+table li {
+    padding: 5px 0 0 25px;
+	list-style: none;
+	background-image: url('./assets/coffee-list.png');
+	background-repeat: no-repeat;
+    background-position: left center;
+	background-size: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #53433c;
+}
+
+nav a:visited {
+    text-decoration: none;
+    color: #7a634e;
+}
+
+.rightcolumn { 
+    margin-left: 155px;
+    background-color: #f7f8de;
+    color: #000000;
+    padding: 10px 30px;
+    height: 400px;
+}
+
+#indexleft {
+    background-color: #ddd18c;
+    float: left;
+    width: 155px;
+    height: 320px;
+}
+
+#indexright { 
+    margin-left: 155px;
+    background-color: #f7f8de;
+    color: #000000;
+    padding: 10px 30px;
+    height: 300px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td p {
+    margin-left: 40px;
+}
+
+form td {
+    padding: 7px;
+}
+
+form td:nth-child(odd) {
+    text-align: right;
+
+}

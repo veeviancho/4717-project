@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JavaJam Coffee House</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="jobs_validate.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+    <header>
+        <img src="./assets/javalogo.gif">
+    </header>
+
+    <div id="leftcolumn">
+    <nav><b>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+    </ul>
+    </b></nav>
+    </div>
+
+    <div class="rightcolumn">
+    <h3>Coffee at JavaJam</h3>
+    <p>Want to work at JavaJam? Fill out the form below to start your application. Required fileds are marked with an asterisk *</p>
+
+    <form method="post" action="sign_up.php">
+        <table>
+            <tr>
+                <td>*Name: </td>
+                <td><input type="text" name="name" id="name" placeholder="Enter your name here" onblur="validate_name();"></td>
+            </tr>
+            <tr>
+                <td>*E-mail: </td>
+                <td><input type="text" name="email" id="email" placeholder="Enter your Email-ID here" onblur="validate_email();"></td>
+            </tr>
+            <tr>
+                <td>Start Date: </td>
+                <td><input type="date" name="date" id="date" onblur="validate_date();"></td>
+            </tr>
+            <tr>
+                <td>*Experience: </td>
+                <td><textarea name="experience" id="experience" rows="4" cols="36" placeholder="Enter your past experience here" required></textarea></td>
+            </tr>
+        </table>
+        <input type="reset" value="Clear">
+        <br>
+        <br>
+        <input type="submit" value="Apply Now">
+    </form>
+
+    </div>
+
+    <footer>
+        <small><i>
+            Copyright &copy; 2014 JavaJam Coffee House
+            <br>
+            <a href="mailto:Vivian@ChoWengYann.com">Vivian@ChoWengYann.com</a>
+        </i></small>
+    </footer>
+</div>
+</body>
+
+</html>

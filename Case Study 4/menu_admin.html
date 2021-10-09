@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JavaJam Coffee House</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="menu_admin_update.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+    <header>
+        <img src="./assets/javalogo.gif">
+    </header>
+
+    <div id="leftcolumn">
+    <nav><b>
+    <ul style="color: #6c4f3d">
+        <a href="menu_admin.html"><li>Product<br>Price<br>Update</li></a>
+        <li><br></li>
+        <a href="report_admin.html"><li>Daily<br>Sales<br>Report</li></a>
+    </ul>
+    </b></nav>
+    </div>
+
+    <div class="rightcolumn">
+    <h3>Click to update product prices:</h3>
+
+    <div id="menutable">
+    <table>
+        <tbody>
+            <tr>
+                <td><input type="checkbox" name="java_check" id="java_check" onclick="change1();"></td>
+                <td><strong>Just Java</strong></td>
+                <td>
+                    Regular house blend, decaffeinated coffee, or flavor of the day.
+                    <br>
+                    <!-- <input id="price1" onfocus="this.blur()"> -->
+                    Endless Cup $<input id="newPrice1" value="2.00" readOnly>
+                    <p id="msg1"></p>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="cafe_check" id="cafe_check" onclick="change2();"></td>
+                <td><strong>Cafe au Lait</strong></td>
+                <td>
+                    House blended coffee infused into a smooth, steamed milk.
+                    <br>
+                    Single $<input id="newPrice2a" value="2.00" readOnly>
+                    Double $<input id="newPrice2b" value="3.00" readOnly>
+                    <p id="msg2"></p>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="iced_check" id="iced_check" onclick="change3();"></td>
+                <td><strong>Iced Cappucino</strong></td>
+                <td>
+                    Sweetened espresso blended with icy-cold milk and served in a chilled glass.
+                    <br>
+                    Single $<input id="newPrice3a" value="4.75" readOnly>
+                    Double $<input id="newPrice3b" value="5.75" readOnly>
+                    <p id="msg3"></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    </div>
+
+
+    </div>
+
+    <footer>
+        <small><i>
+            Copyright &copy; 2014 JavaJam Coffee House
+            <br>
+            <a href="mailto:Vivian@ChoWengYann.com">Vivian@ChoWengYann.com</a>
+        </i></small>
+    </footer>
+</div>
+</body>
+
+</html>
+
+<style>
+input {
+    width: 50px;
+}
+
+.newPrice1 {
+    display: none;
+}
+</style>

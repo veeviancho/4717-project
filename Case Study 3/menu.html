@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JavaJam Coffee House</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="menu_update.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+    <header>
+        <img src="./assets/javalogo.gif">
+    </header>
+
+    <div id="leftcolumn">
+    <nav><b>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+    </ul>
+    </b></nav>
+    </div>
+
+    <div class="rightcolumn">
+    <h3>Coffee at JavaJam</h3>
+
+    <div id="menutable">
+    <table>
+        <tbody>
+            <tr>
+                <td><strong>Just Java</strong></td>
+                <td>
+                    Regular house blend, decaffeinated coffee, or flavor of the day.
+                    <br>
+                    <strong>Endless Cup $2.00</strong>
+                </td>
+                <td style="text-align:center"><input type="text" id="java" name="java" style="width: 25%" onblur="computeJava();"/></td>
+                <td style="text-align:center"><input type="text" id="java_total" name="java_total" style="width: 80%"/></td>
+            </tr>
+            <tr>
+                <!-- CALLING FUNCTION FROM THE RADIO BUTTON -->
+                <td><strong>Cafe au Lait</strong></td>
+                <td>
+                    House blended coffee infused into a smooth, steamed milk.
+                    <br>
+                    <strong>
+                        <input type="radio" name="cafeButton" value="2" onclick="computeCafe(2);"/>Single $2.00 
+                        <input type="radio" name="cafeButton" value="3" onclick="computeCafe(3);"/>Double $3.00
+                    </strong>
+                </td>
+                <td style="text-align:center"><input type="text" id="cafe" name="cafe" style="width: 25%"></td>
+                <td style="text-align:center"><input type="text" id="cafe_total" name="cafe_total" style="width: 80%"></td>
+            </tr>
+            <tr>
+                <!-- CALLING FUNCTION FROM THE TEXTBOX -->
+                <td><strong>Iced Cappucino</strong></td>
+                <td>
+                    Sweetened espresso blended with icy-cold milk and served in a chilled glass.
+                    <br>
+                    <strong>
+                        <input type="radio" name="icedButton" value="single">Single $4.75
+                        <input type="radio" name="icedButton" value="double">Double $5.75
+                    </strong>
+                </td>
+                <td style="text-align:center"><input type="text" id="iced" name="iced" style="width: 25%" onblur="computeIced();"></td>
+                <td style="text-align:center"><input type="text" id="iced_total" name="iced_total" style="width: 80%"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p style="text-align: right;">Total Price: <input type="text" id="total_cost" name="total_cost" style="width: 10%"></p>
+
+    </div>
+
+
+    </div>
+
+    <footer>
+        <small><i>
+            Copyright &copy; 2014 JavaJam Coffee House
+            <br>
+            <a href="mailto:Vivian@ChoWengYann.com">Vivian@ChoWengYann.com</a>
+        </i></small>
+    </footer>
+</div>
+</body>
+
+</html>
