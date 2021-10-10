@@ -9,7 +9,13 @@ function insert_price($id) {
     }
 
     $sql = "SELECT coffee_price FROM f32ee.coffee WHERE coffee_id = $id;";
-	if ($result = mysqli_query($conn, $sql)) {
+	$result = $db->query($sql);
+
+	// foreach ($row as $key => $value) {
+	// 	echo $key . "-" . $value . "<br/>";
+	// }
+	
+	if ($result) {
 		$row = mysqli_fetch_row($result);
 		echo number_format((float)$row[0], 2, '.', '');
 	} else {
