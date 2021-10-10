@@ -41,7 +41,7 @@ include "menu_displayPrice.php"
                 <td>
                     Regular house blend, decaffeinated coffee, or flavor of the day.
                     <br>
-                    Endless Cup $<?php insert_price(1)?> <input id="newPrice1" name="newPrice1" placeholder="Edit price" type="hidden">
+                    Endless Cup $<?php insert_price(1)?> <input id="newPrice1" step="0.01" name="newPrice1" placeholder="Edit price" type="hidden">
                 </td>
             </tr>
             <tr>
@@ -50,8 +50,8 @@ include "menu_displayPrice.php"
                 <td>
                     House blended coffee infused into a smooth, steamed milk.
                     <br>
-                    Single $<?php insert_price(2)?> <input id="newPrice2" name="newPrice2" placeholder="Edit price" type="hidden">
-                    Double $<?php insert_price(3)?> <input id="newPrice3" name="newPrice3" placeholder="Edit price" type="hidden">
+                    Single $<?php insert_price(2)?> <input id="newPrice2" step="0.01" name="newPrice2" placeholder="Edit price" type="hidden">
+                    Double $<?php insert_price(3)?> <input id="newPrice3" step="0.01" name="newPrice3" placeholder="Edit price" type="hidden">
                 </td>
             </tr>
             <tr>
@@ -60,8 +60,8 @@ include "menu_displayPrice.php"
                 <td>
                     Sweetened espresso blended with icy-cold milk and served in a chilled glass.
                     <br>
-                    Single $<?php insert_price(4)?> <input id="newPrice4" name="newPrice4" placeholder="Edit price" type="hidden">
-                    Double $<?php insert_price(5)?> <input id="newPrice5" name="newPrice5" placeholder="Edit price" type="hidden">
+                    Single $<?php insert_price(4)?> <input id="newPrice4" step="0.01" name="newPrice4" placeholder="Edit price" type="hidden">
+                    Double $<?php insert_price(5)?> <input id="newPrice5" step="0.01" name="newPrice5" placeholder="Edit price" type="hidden">
                 </td>
             </tr>
         </tbody>
