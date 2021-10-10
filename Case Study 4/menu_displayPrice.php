@@ -21,6 +21,6 @@ function insert_price($id) {
 	} else {
 		echo "Failed fetching data from database.";
 	}
-	mysqli_close($conn);
+	mysqli_close($db);
 }
 ?>

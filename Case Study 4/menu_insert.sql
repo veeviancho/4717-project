@@ -8,7 +8,8 @@ insert into coffee values
   (5, "Iced Cappucino", "Double", 5.75);
 
 insert into orders values
-  (1, 3, 5),
-  (2, 1, 2),
-  (3, 4, 17),
-  (4, 3, 1);
+  (1, 3, "Cafe au Lait", 5),
+  (2, 1, "Just Java", 2),
+  (3, 2, "Cafe au Lait", 7),
+  (4, 4, "Iced Cappucino", 17),
+  (4, 3, "Cafe au Lait", 1);

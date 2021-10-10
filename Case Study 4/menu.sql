@@ -7,6 +7,7 @@ create table coffee
 
 create table orders
 ( order_id int unsigned not null auto_increment primary key,
-  coffee_id int unsigned not null foreign key,
+  coffee_id int unsigned not null,
+  coffee_name char(50) not null,
   quantity int unsigned
 );
