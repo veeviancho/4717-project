@@ -134,7 +134,7 @@ form td {
     padding: 7px;
 }
 
-form td:nth-child(odd) {
+/* form td:nth-child(odd) {
     text-align: right;
 
-}
+} */

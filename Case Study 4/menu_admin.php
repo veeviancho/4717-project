@@ -1,3 +1,7 @@
+<?php 
+include "menu_price.php"
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +9,7 @@
     <title>JavaJam Coffee House</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="menu_admin_update.js"></script>
+    <script type="text/javascript" src="menu_admin.js"></script>
 </head>
 
 <body>
@@ -17,9 +21,9 @@
     <div id="leftcolumn">
     <nav><b>
     <ul style="color: #6c4f3d">
-        <a href="menu_admin.html"><li>Product<br>Price<br>Update</li></a>
+        <a href="menu_admin.php"><li>Product<br>Price<br>Update</li></a>
         <li><br></li>
-        <a href="report_admin.html"><li>Daily<br>Sales<br>Report</li></a>
+        <a href="report_admin.php"><li>Daily<br>Sales<br>Report</li></a>
     </ul>
     </b></nav>
     </div>
@@ -28,6 +32,7 @@
     <h3>Click to update product prices:</h3>
 
     <div id="menutable">
+    <form action="menu_updateDB.php" method="post">
     <table>
         <tbody>
             <tr>
@@ -36,9 +41,7 @@
                 <td>
                     Regular house blend, decaffeinated coffee, or flavor of the day.
                     <br>
-                    <!-- <input id="price1" onfocus="this.blur()"> -->
-                    Endless Cup $<input id="newPrice1" value="2.00" readOnly>
-                    <p id="msg1"></p>
+                    Endless Cup $<?php insert_price(1)?> <input id="newPrice1" name="newPrice1" placeholder="Edit price" readOnly>
                 </td>
             </tr>
             <tr>
@@ -47,9 +50,8 @@
                 <td>
                     House blended coffee infused into a smooth, steamed milk.
                     <br>
-                    Single $<input id="newPrice2a" value="2.00" readOnly>
-                    Double $<input id="newPrice2b" value="3.00" readOnly>
-                    <p id="msg2"></p>
+                    Single $<?php insert_price(2)?> <input id="newPrice2" name="newPrice2" placeholder="Edit price" readOnly>
+                    Double $<?php insert_price(3)?> <input id="newPrice3" name="newPrice3" placeholder="Edit price" readOnly>
                 </td>
             </tr>
             <tr>
@@ -58,18 +60,18 @@
                 <td>
                     Sweetened espresso blended with icy-cold milk and served in a chilled glass.
                     <br>
-                    Single $<input id="newPrice3a" value="4.75" readOnly>
-                    Double $<input id="newPrice3b" value="5.75" readOnly>
-                    <p id="msg3"></p>
+                    Single $<?php insert_price(4)?> <input id="newPrice4" name="newPrice4" placeholder="Edit price" readOnly>
+                    Double $<?php insert_price(5)?> <input id="newPrice5" name="newPrice5" placeholder="Edit price" readOnly>
                 </td>
             </tr>
         </tbody>
     </table>
-
+    <br>
+    <input type="submit" value="Update changes" style="width: 200px">
+    </form>
     </div>
 
-
-    </div>
+</div>
 
     <footer>
         <small><i>
@@ -85,10 +87,6 @@
 
 <style>
 input {
-    width: 50px;
-}
-
-.newPrice1 {
-    display: none;
+    width: 70px;
 }
 </style>
