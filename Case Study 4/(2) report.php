@@ -1,5 +1,5 @@
 <?php
-include "report1_function"
+include "report1_function.php"
 ?>
 
 <!DOCTYPE html>
@@ -21,9 +21,9 @@ include "report1_function"
     <div id="leftcolumn">
     <nav><b>
     <ul style="color: #6c4f3d">
-        <a href="menu_admin.html"><li>Product<br>Price<br>Update</li></a>
+        <a href="menu_admin.php"><li>Product<br>Price<br>Update</li></a>
         <li><br></li>
-        <a href="report_admin.html"><li>Daily<br>Sales<br>Report</li></a>
+        <a href="report_admin.php"><li>Daily<br>Sales<br>Report</li></a>
     </ul>
     </b></nav>
     </div>
@@ -35,7 +35,7 @@ include "report1_function"
     <table>
         <tr>
             <th>Product Name</th>
-            <th><?php insert_quantity("Just Java")?></th>
+            <th>Quantity</th>
             <th>Total Dollar Sales</th>
         </tr>
         <tr>
@@ -55,7 +55,7 @@ include "report1_function"
         </tr>
         <tr>
             <th>Total</th>
-            <th><?php insert_quantity("Iced Cappucino")?></th>
+            <th><?php insert_quantity("idk")?></th>
             <th>20</th>
         </tr>
     </table>

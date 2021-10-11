@@ -12,4 +12,4 @@ insert into orders values
   (2, 1, "Just Java", 2),
   (3, 2, "Cafe au Lait", 7),
   (4, 4, "Iced Cappucino", 17),
-  (4, 3, "Cafe au Lait", 1);
+  (5, 3, "Cafe au Lait", 1);

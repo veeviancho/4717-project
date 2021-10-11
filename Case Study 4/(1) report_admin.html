@@ -17,9 +17,9 @@
     <div id="leftcolumn">
     <nav><b>
     <ul style="color: #6c4f3d">
-        <a href="menu_admin.html"><li>Product<br>Price<br>Update</li></a>
+        <a href="menu_admin.php"><li>Product<br>Price<br>Update</li></a>
         <li><br></li>
-        <a href="report_admin.html"><li>Daily<br>Sales<br>Report</li></a>
+        <a href="report.php"><li>Daily<br>Sales<br>Report</li></a>
     </ul>
     </b></nav>
     </div>
@@ -27,11 +27,14 @@
     <div class="rightcolumn">
     <h3>Click to generate daily sales report:</h3>
 
-    <div id="menutable">  
-    <table>
-        <h3><input type="checkbox" id="totalSales" onclick="report1();">Total dollar sales by products</h3>
-        <h3><input type="checkbox" id="salesQuantity" onclick="report2();">Sales quantities by product categories</h3>
-    </table>
+    <div id="menutable"> 
+    <form action="report.php" method="post">
+        <table>
+            <h3><input type="radio" id="totalSales" name="report" value="total">Total dollar sales by products</h3>
+            <h3><input type="radio" id="salesQuantity" name="report" value="quantity">Sales quantities by product categories</h3>
+        </table>
+        <div id="button"><input type="submit" value="Generate Report"/></div>
+    </form> 
     </div>
 
     <p id="report1"></p>
@@ -52,8 +55,12 @@
 </html>
 
 <style>
+#button {
+    text-align: center;
+}
+
 input {
-    width: 50px;
+    width: 150px;
 }
 
 .newPrice1 {
