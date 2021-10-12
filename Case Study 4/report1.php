@@ -9,7 +9,6 @@ include "report1_function.php"
     <title>JavaJam Coffee House</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="report_admin_update.js"></script>
 </head>
 
 <body>
@@ -40,29 +39,28 @@ include "report1_function.php"
         </tr>
         <tr>
             <td>Just Java</td>
-            <td><?php insert_quantity("Cafe au Lait")?></td>
-            <td>sales</td>
+            <td><?php insert_quantity("Just Java")?></td>
+            <td><?php insert_price("Just Java")?></td>
         </tr>
         <tr>
             <td>Cafe au Lait</td>
             <td><?php insert_quantity("Cafe au Lait")?></td>
-            <td>sales</td>
+            <td><?php insert_price("Cafe au Lait")?></td>
         </tr>
         <tr>
             <td>Iced Cappucino</td>
             <td><?php insert_quantity("Iced Cappucino")?></td>
-            <td>sales</td>
+            <td><?php insert_price("Iced Cappucino")?></td>
         </tr>
         <tr>
             <th>Total</th>
-            <th><?php insert_quantity("idk")?></th>
-            <th>20</th>
+            <th id='quantity'></th>
+            <th id='price'></th>
         </tr>
     </table>
     </div>
 
-    <p id="report1"></p>
-    <p id="report2"></p>
+    <a href="report_admin.php">Go back to previous page</a>
 
     </div>
 
@@ -75,7 +73,6 @@ include "report1_function.php"
     </footer>
 </div>
 </body>
-
 </html>
 
 <style>
@@ -87,3 +84,15 @@ input {
     display: none;
 }
 </style>
+
+<script type="text/javascript">
+    var a = <?php insert_quantity("Just Java")?>;
+    var b = <?php insert_quantity("Cafe au Lait")?>;
+    var c = <?php insert_quantity("Iced Cappucino")?>;
+    document.getElementById('quantity').innerHTML = a + b + c;
+
+    var x = <?php insert_price("Just Java")?>;
+    var y = <?php insert_price("Cafe au Lait")?>;
+    var z = <?php insert_price("Iced Cappucino")?>;
+    document.getElementById('price').innerHTML = x + y + z;
+</script>

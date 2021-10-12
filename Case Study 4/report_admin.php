@@ -27,18 +27,14 @@
     <div class="rightcolumn">
     <h3>Click to generate daily sales report:</h3>
 
-    <div id="menutable"> 
-    <form action="report.php" method="post">
-        <table>
-            <h3><input type="radio" id="totalSales" name="report" value="total">Total dollar sales by products</h3>
-            <h3><input type="radio" id="salesQuantity" name="report" value="quantity">Sales quantities by product categories</h3>
-        </table>
-        <div id="button"><input type="submit" value="Generate Report"/></div>
-    </form> 
-    </div>
+    <form action="report1.php" method="post">
+        <h3><input type="submit" value="Generate"/> Total dollar sales by products</h3>
+    </form>
 
-    <p id="report1"></p>
-    <p id="report2"></p>
+    <form action="report2.php" method="post">
+    <h3><input type="submit" value="Generate"/> Sales quantities by product categories</h3>
+    </form>
+    </div>
 
     </div>
 
@@ -60,7 +56,7 @@
 }
 
 input {
-    width: 150px;
+    width: 80px;
 }
 
 .newPrice1 {

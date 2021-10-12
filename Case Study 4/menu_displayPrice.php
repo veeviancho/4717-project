@@ -17,7 +17,9 @@ function insert_price($id) {
 	
 	if ($result) {
 		$row = mysqli_fetch_row($result);
-		echo number_format((float)$row[0], 2, '.', '');
+
+		// number_format(num, dp, dp separator, thousands separator)
+		echo number_format($row[0], 2, '.', '');
 	} else {
 		echo "Failed fetching data from database.";
 	}
